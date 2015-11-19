@@ -17,7 +17,8 @@ func TestIdealRocketEquation(t *testing.T){
 	mass1 := 2400.0
 	mass2 := 400.0
 	specificImpulse := 210.0
-	dv := Calc_delta_v(mass1, mass2, specificImpulse)	
+	dv := Calc_delta_v(mass1, mass2, specificImpulse)
+	fmt.Println("DV calculated as", dv)	
 	if ! fuzzy_match(dv, 3691.2) {
 		t.Error("For", mass1, mass2, "and", specificImpulse,
 			"Expected", 3691.2,
