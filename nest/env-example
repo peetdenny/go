@@ -1,0 +1,4 @@
+# make a copy of this named .env in this directory and set all of the below variables
+export DEVICE=
+export PORT=
+export BEARER=
